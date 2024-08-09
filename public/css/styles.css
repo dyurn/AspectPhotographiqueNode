@@ -1,0 +1,156 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.header {
+  font-family: 'Merriweather', serif;
+  color: red;
+}
+
+.hero h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  font-family: 'Merriweather', serif;
+}
+
+.container {
+  padding-top: 20px;
+  color: #333;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+h4 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+/* Ajout de l'effet de zoom */
+.zoomable {
+  transition: transform 0.8s ease;
+}
+
+.zoomable:hover {
+  transform: scale(1.1);
+}
+
+/* Bords arrondis pour les images du carrousel */
+.carousel-inner .carousel-item img {
+  border-radius: 15px;
+}
+
+/* Style personnalisé pour le header et la navbar */
+.bg-custom {
+  background-color: #000361; /* Couleur de fond personnalisée pour la navbar */
+  border-bottom: 3px solid #34b2b0; /* Bordure rouge en bas de la navbar */
+}
+
+.navbar-brand {
+  font-family: 'Merriweather', serif;
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #f8f8f8;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #40bee7; /* Couleur rouge sur le hover */
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.1em;
+  font-family: 'Roboto', sans-serif;
+  color: #f8f8f8;
+  padding: 8px 15px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #40bee7;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px; /* Ajout d'un arrondi aux liens lors du hover */
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='https://www.svgrepo.com/show/530117/camera.svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.7%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  outline: none;
+  box-shadow: none;
+}
+
+.collapse.show {
+  background-color: #000361;
+  border-radius: 0 0 10px 10px;
+  padding: 10px 0;
+}
+
+.collapse.show .nav-item {
+  border-bottom: 1px solid #555;
+}
+
+.collapse.show .nav-item:last-child {
+  border-bottom: none;
+}
+
+/* Style personnalisé pour le footer */
+footer {
+  background-color: #000361; /* Couleur de fond du footer */
+  color: #f8f8f8; /* Couleur du texte */
+  padding: 20px 0; /* Espacement intérieur */
+  text-align: center;
+  border-top: 3px solid #34b2b0; /* Bordure supérieure similaire à la navbar */
+  font-family: 'Roboto', sans-serif;
+}
+
+footer a {
+  color: #40bee7; /* Couleur des liens */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #34b2b0; /* Couleur des liens au survol */
+  text-decoration: underline;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1em;
+}
+
+footer .social-icons {
+  margin-top: 10px;
+}
+
+footer .social-icons a {
+  margin: 0 10px;
+  color: #f8f8f8;
+  font-size: 1.5em;
+  transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+  color: #40bee7;
+}
+
+footer small {
+  display: block;
+  margin-top: 10px;
+  color: #bbb;
+  font-size: 0.8em;
+}
+

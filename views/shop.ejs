@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boutique</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" href="/images/icon/favicon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <%- include('partials/header') %>
+  <main>
+    <section class="hero text-center text-white d-flex align-items-center justify-content-center">
+      <div class="container">
+        <h2>Un livre de photographie unique</h2>
+      </div>
+    </section>
+
+    <section id="book-details" class="container mt-5">
+      <div class="row">
+        <div class="col-md-6">
+          <!-- Carrousel à gauche du texte -->
+          <div id="bookCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#bookCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#bookCarousel" data-slide-to="1"></li>
+              <li data-target="#bookCarousel" data-slide-to="2"></li>
+              <li data-target="#bookCarousel" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/images/hero.png" class="d-block w-100" alt="Couverture du livre">
+              </div>
+              <div class="carousel-item">
+                <img src="/images/expo1.png" class="d-block w-100" alt="Exposition 1">
+              </div>
+              <div class="carousel-item">
+                <img src="/images/expo2.png" class="d-block w-100" alt="Exposition 2">
+              </div>
+              <div class="carousel-item">
+                <img src="/images/expo3.png" class="d-block w-100" alt="Exposition 3">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#bookCarousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Précédent</span>
+            </a>
+            <a class="carousel-control-next" href="#bookCarousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Suivant</span>
+            </a>
+          </div>
+          <!-- Fin du Carrousel -->
+        </div>
+        <div class="col-md-6">
+          <h3>Découvrez mon livre</h3>
+          <p><strong>Aspect Photographique</strong></p>
+          <p>
+            "Aspect Photographique" est un livre de photographie qui capture la beauté et la diversité du monde à travers l'objectif de l'appareil photo. 
+            Chaque page est une œuvre d'art qui raconte une histoire, évoque des émotions et transporte le lecteur dans des lieux lointains.
+            Ce livre explore divers thèmes, des paysages naturels époustouflants en passant par des scènes de rue vibrantes. 
+          </p>
+          <button class="btn btn-primary" data-toggle="modal" data-target="#contactModal">Me contacter pour acheter</button>
+        </div>
+      </div>
+
+      <!-- Images d'exposition en dessous comme avant -->
+      <div class="row mt-5">
+        <div class="col-md-3 col-sm-6">
+          <img src="/images/expo1.png" class="img-fluid zoomable" alt="Exposition 1">
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <img src="/images/expo2.png" class="img-fluid zoomable" alt="Exposition 2">
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <img src="/images/expo3.png" class="img-fluid zoomable" alt="Exposition 3">
+        </div>
+      </div>
+    </section>
+    <br>
+    <br>
+  </main>
+  <%- include('partials/footer') %>
+
+  <!-- Modal -->
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="contactModalLabel">Contactez-moi pour acheter</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Email : <a href="mailto:email@example.com">email@example.com</a></p>
+          <p>Téléphone : <a href="tel:+123456789">+123456789</a></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
